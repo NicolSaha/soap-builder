@@ -29,7 +29,7 @@
 - [Persona 1/2/3](https://github.com/NicolSaha/soap-builder/blob/main/UserStories.md)
 
 ## Scope of Project
-- [Scope](#)
+- [Scope](https://github.com/NicolSaha/soap-builder/blob/main/Scope.md)
 
 ## UML Diagram
 - [Diagram](#)
