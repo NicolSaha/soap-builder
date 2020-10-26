@@ -4,12 +4,12 @@
 1. Create veggie burgers app
 
 1. Ecological products
-  1. Shop for ecological soaps
-  1. Shop for ecological cleaning products
-  1. Customize your own soap
+   * Shop for ecological soaps
+   * Shop for ecological cleaning products
+   * Customize your own soap
 
 1. Animal shelter app
-  1. Tinder for shelter animals (national or worldwide)
+   * Tinder for shelter animals (national or worldwide)
 
 ## The decision
 
