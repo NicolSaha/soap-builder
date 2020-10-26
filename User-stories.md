@@ -1,0 +1,9 @@
+# Day one
+## User stories
+### User story of ...
+As a ecofriendly, non-waste believer, I want to have the opportunity to buy an ecological soap where I can pick my own ingredients and scents so that the soap can match my hair or body-type and I can decide of which ingredients the soap is built.
+
+### User story of ...
+
+
+### User story of ...
