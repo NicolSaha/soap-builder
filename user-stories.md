@@ -1,9 +1,0 @@
-# Day one
-## User stories
-### User story of ...
-
-
-### User story of ...
-
-
-### User story of ...
