@@ -22,6 +22,9 @@
 ## 🛠 Built with
 - [Example](#)
 
+## Brainstorm
+- [Session](https://github.com/NicolSaha/soap-builder/blob/main/Brainstorm.md)
+
 ## User Stories
 - [Persona 1](#)
 
