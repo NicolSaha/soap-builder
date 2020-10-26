@@ -32,7 +32,7 @@
 - [Scope](https://github.com/NicolSaha/soap-builder/blob/main/Scope.md)
 
 ## UML Diagram
-- [Diagram](#)
+- [Diagrams](https://github.com/NicolSaha/soap-builder/tree/main/UML)
 
 ## Wireframes
 - [Wireframe](#)
