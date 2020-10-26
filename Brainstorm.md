@@ -1,5 +1,5 @@
-#Day 1
-##The brainstorm
+# Day one
+## The brainstorm
 
 1. Create veggie burgers app
 
