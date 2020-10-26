@@ -11,6 +11,7 @@
     4. CTA Soap builder
     5. Product picture
     6. Missie/slogan 
+
   
 - Product page
     1. Bestsellers
@@ -25,6 +26,7 @@
         - Male products
     5. Subscription option
     6. Review Page
+  
   
 - Soap builder: Magic Blend
     1. Type:
@@ -51,6 +53,7 @@
         - Extras
     9. Random name generator
   
+  
 - Shopping cart
     - CTA Soap builder if empty
     - List of products added
@@ -62,6 +65,7 @@
     - Continue shopping
     - Checkout
   
+  
 - Checkout page
     - Guest or login
     - Address 
@@ -69,6 +73,7 @@
     - Payment 
     - Confirm
     - Confirmation
+  
   
 - Login 
     1. Email / Username
@@ -78,21 +83,25 @@
         - Option to save personal data
     5. Forgot password
   
+  
 - User profile
     1. Email
     2. Subscriptions
     3. My orders
+  
   
 - About us
     1. Vision
     2. Story
     3. Values
   
+  
 - Contact
     1. Email
     2. Address
     3. Phone
     4. Link to FAQ
+  
   
 - FAQ
     1. Shipping & Return
