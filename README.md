@@ -26,7 +26,7 @@
 - [Session](https://github.com/NicolSaha/soap-builder/blob/main/Brainstorm.md)
 
 ## User Stories
-- [Persona 1](#)
+- [Persona 1/2/3](https://github.com/NicolSaha/soap-builder/blob/main/UserStories.md)
 
 ## Scope of Project
 - [Scope](#)
