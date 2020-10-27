@@ -37,7 +37,7 @@
 - [Diagrams](https://github.com/NicolSaha/soap-builder/tree/main/UML)
 
 ## Wireframes
-- [Wireframe](#)
+- [Wireframe](https://github.com/NicolSaha/soap-builder/tree/main/Wireframes)
 
 ## Mockups
 - [Mockup](#)
