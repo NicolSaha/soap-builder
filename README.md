@@ -18,6 +18,8 @@
 
 ## 💭 Live Version MVP
 - [Click Here](#)
+- Soap builder
+- Check-out process
 
 ## 🛠 Built with
 - [Example](#)
