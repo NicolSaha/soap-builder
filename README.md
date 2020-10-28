@@ -1,9 +1,9 @@
 # ✨ Soap Builder
 
 ## 📓 [Assignment](https://github.com/becodeorg/gnt-yu-3-21/tree/master/3.The-Mountain/9.Final-Project)
-- Focus: client communication, planning and executing. 
-- Learn: use new design tools, plan work to save development time, and communicate user stories through UML diagrams. 
-- Product: build an MVP (Minimum Viable Product) for the client.
+- **Focus:** client communication, planning and executing. 
+- **Learn:** use new design tools, plan work to save development time, and communicate user stories through UML diagrams. 
+- **Product:** build an MVP (Minimum Viable Product) for the client.
 
 ## 🎓 Learning Objectives
 - Define the client’s needs (user stories)
@@ -18,29 +18,50 @@
 
 ## 💭 Live Version MVP
 - [Click Here](#)
-- Soap builder
-- Check-out process
+- Present Features:
+    1. Soap builder
+    2. Check-out process
+
+## 👥 Team
+- [Lisa Baetsle](https://github.com/LisaBaetsle)
+- [Nicol Saha](https://github.com/NicolSaha)
 
 ## 🛠 Built with
-- [Example](#)
+- [PHP Storm](https://www.jetbrains.com/phpstorm/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Markdown](https://www.markdownguide.org/)
 
 ## Brainstorm
-- [Session](https://github.com/NicolSaha/soap-builder/blob/main/Brainstorm.md)
+- [Session](https://github.com/NicolSaha/soap-builder/blob/main/Brainstorm/Brainstorm.md)
 
 ## User Stories
-- [Persona 1/2/3](https://github.com/NicolSaha/soap-builder/blob/main/UserStories.md)
+- [Persona 1/2/3](https://github.com/NicolSaha/soap-builder/blob/main//ScopeAndUserStories/UserStories.md)
 
 ## Scope of Project
-- [Scope](https://github.com/NicolSaha/soap-builder/blob/main/Scope.md)
+- [Scope](https://github.com/NicolSaha/soap-builder/blob/main/ScopeAndUserStories/Scope.md)
 
 ## UML Diagram
-- [Diagrams](https://github.com/NicolSaha/soap-builder/tree/main/UML)
+- [All Diagrams](https://github.com/NicolSaha/soap-builder/tree/main/UML)
+- [Soap Builder](https://github.com/NicolSaha/soap-builder/blob/main/UML/1.1-SoapBuilder.png)
+- [View Items](https://github.com/NicolSaha/soap-builder/blob/main/UML/1.2-ViewItems.png)
+- [User and Checkout](https://github.com/NicolSaha/soap-builder/blob/main/UML/1.3-UserAndCheckout.png)
 
 ## Wireframes
-- [Wireframe](https://github.com/NicolSaha/soap-builder/tree/main/Wireframes)
+- [All Wireframe](https://github.com/NicolSaha/soap-builder/tree/main/Wireframes)
+- [Cart](https://github.com/NicolSaha/soap-builder/blob/main/Wireframes/2.1-Cart.png)
+- [Delivery](https://github.com/NicolSaha/soap-builder/blob/main/Wireframes/2.2-Delivery.png)
+- [Payment](https://github.com/NicolSaha/soap-builder/blob/main/Wireframes/2.3-Payment.png)
+- [Confirmation](https://github.com/NicolSaha/soap-builder/blob/main/Wireframes/2.4-Confirmation.png)
+- [Soap Builder](https://github.com/NicolSaha/soap-builder/blob/main/Wireframes/2.5-SoapBuilder.pdf)
 
 ## Mockups
-- [Mockup](https://github.com/NicolSaha/soap-builder/tree/main/Mockups)
+- [All Mockups](https://github.com/NicolSaha/soap-builder/tree/main/Mockups)
+- [Colours](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/Colours.pdf)
+- [Cart](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.1-Cart.png)
+- [Delivery](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.2-Delivery.png)
+- [Payment](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.3-Payment.png)
+- [Confirmation](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.4-Confirmation.png)
+- [Soap Builder](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.5-SoapBuilder.pdf)
 
 ### 👩🏻‍💻 License 
 This project is [MIT](https://github.com/NicolSaha/soap-builder/blob/main/LICENSE) licensed <br/>
