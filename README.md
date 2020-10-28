@@ -57,6 +57,7 @@
 ## Mockups
 - [All Mockups](https://github.com/NicolSaha/soap-builder/tree/main/Mockups)
 - [Colours](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/Colours.pdf)
+- [Typography](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/Typography.png)
 - [Cart](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.1-Cart.png)
 - [Delivery](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.2-Delivery.png)
 - [Payment](https://github.com/NicolSaha/soap-builder/blob/main/Mockups/3.3-Payment.png)
