@@ -1,3 +1,5 @@
+
+# Day one
 # Scope
 ***User needs to be able to navigate through the shop, and build and order custom soap bars.***
 
