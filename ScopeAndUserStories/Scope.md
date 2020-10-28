@@ -1,9 +1,7 @@
-
 # Day one
-# Scope
-***User needs to be able to navigate through the shop, and build and order custom soap bars.***
 
-## Needs
+## Scope
+### Needs
 - Homepage
     1. Intro
     2. CTA Products
