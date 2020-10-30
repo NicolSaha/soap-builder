@@ -17,7 +17,7 @@
 - Add a quality README
 
 ## 💭 Live Version MVP
-- [Click Here](#)
+- [Netlify](https://soap-it-up.netlify.app/)
 - Present Features:
     1. Soap builder
     2. Check-out process
