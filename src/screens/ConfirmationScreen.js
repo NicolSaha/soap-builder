@@ -1,9 +1,15 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScent, totalPrice, qtyInCart }) => {
+const ConfirmationScreen = ({ inputName, inputType, inputBase, inputMagicEffects, inputScent, totalPrice, qtyInCart, setInputName, cart, setCart }) => {
 
+    function inputNameHandler(e) {
+        setInputName(e.target.value);
+     }
 
+     function addToCart(inputName) {
+        setCart([...cart, { name: inputName}]);
+    }
 
     return (
         <>
@@ -32,7 +38,7 @@ const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScen
 
                                 <div className="mt-2">
                                     <p className="text-sm leading-5 text-mainGreen">
-                                        IT ‘S TIME TO NAME IS</p>
+                                        IT ‘S TIME TO NAME IT</p>
                                 </div>
                             </div>
                             <br/>
@@ -42,7 +48,7 @@ const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScen
                                            className="mr-1 text-sm font-medium leading-5 text-mainLavender">Name
                                         it: </label>
                                     <div className="inline-flex mt-1 relative rounded-md shadow-sm w-3/4">
-                                        <input id="nameIt" className=" form-input w-3/4 sm:text-sm sm:leading-5"
+                                        <input id="nameIt" value={ inputName } onChange={ inputNameHandler } className=" form-input w-3/4 sm:text-sm sm:leading-5"
                                                placeholder="My Beauty Potion"/>
                                     </div>
                                 </div>
@@ -69,6 +75,7 @@ const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScen
                         <div className="mt-5 sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense">
                         <span className="flex w-full rounded-md shadow-sm sm:col-start-2">
                             <button type="button"
+                                    onClick={ addToCart }
                                     className="font-body inline-flex justify-center w-full rounded-md border border-white px-4 py-2 bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-base leading-6 font-medium focus:outline-none text-white shadow-sm transition ease-in-out duration-150 sm:text-sm sm:leading-5">
                                   <Link to={'/cart'}>
                                 <p> GO TO CHECKOUT ({qtyInCart}) &rarr;</p>

@@ -19,6 +19,7 @@ import './styles/cart.css';
 
 function App() {
 
+    const [inputName, setInputName] = useState('');
     const [inputType, setInputType] = useState('');
     const [inputBase, setInputBase] = useState("");
     const [purchased, setPurchased] = useState(false);
@@ -34,30 +35,6 @@ function App() {
     const [cart, setCart] = useState([]);
     const [page, setPage] = useState(PAGE_PRODUCTS);
 
-
-    const [products] = useState([
-        {name: 'Custom Soap 1',
-            price: '9.99',
-            image: './assets/soap1.jpg',
-            amount: 1,
-            id: 1,
-        },
-        {name: 'Custom Soap 2',
-            price: '8.99',
-            image: './assets/soap2.jpg',
-            amount: 1,
-            id: 2,
-        }
-    ])
-
-
-    function addToCart(product) {
-        if(cart.includes(product)){
-            console.log('product already exists');
-        } else {
-            setCart([...cart, product]);
-        }
-    }
 
     //DEEP COPY
     function jsonCopy(src) {
@@ -118,6 +95,7 @@ function App() {
               />)}
               />
               <Route path='/confirmation' render={(props) => (<ConfirmationScreen {...props}
+                                                                                  inputName={inputName} setInputName={setInputName}
                                                                                   inputType={inputType} setInputType={setInputType}
                                                                                   inputBase={inputBase} setInputBase={setInputBase}
                                                                                   purchased={purchased} setPurchased={setPurchased}
@@ -131,7 +109,6 @@ function App() {
                                                                                       cart={cart} setCart={setCart}
                                                                                       page={page} setPage={setPage}
                                                                                       qtyInCart={qtyInCart}
-                                                                                      products={products}
                                                                                       removeFromCart={removeFromCart}
                                                                                       incrementAmount={incrementAmount}
                                                                                       decrementAmount={decrementAmount}
