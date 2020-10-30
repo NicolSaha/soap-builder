@@ -30,7 +30,6 @@ function App() {
     const [inputSoapItem, setInputSoapItem] = useState('');
 
     const PAGE_PRODUCTS = 'products';
-    const PAGE_CART = 'cart';
 
     const [cart, setCart] = useState([]);
     const [page, setPage] = useState(PAGE_PRODUCTS);
@@ -103,6 +102,7 @@ function App() {
                                                                                   inputScent={inputScent} setInputScent={setInputScent}
                                                                                   totalPrice={totalPrice} setTotalPrice={setTotalPrice}
                                                                                   qtyInCart={qtyInCart}
+                                                                                  cart={cart} setCart={setCart}
               />)}
               />
               <Route path='/cart' render={(props) => (<CheckoutScreen {...props}

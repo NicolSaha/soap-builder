@@ -7,8 +7,8 @@ const ConfirmationScreen = ({ inputName, inputType, inputBase, inputMagicEffects
         setInputName(e.target.value);
      }
 
-     function addToCart(inputName) {
-        setCart([...cart, { name: inputName}]);
+     function addToCart() {
+        setCart([...cart, { name: inputName, image: './images/soap1.jpg', price: totalPrice, amount: 1 }]);
     }
 
     return (
