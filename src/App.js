@@ -85,6 +85,7 @@ function App() {
                                                                                       cart={cart} setCart={setCart}
                                                                                       page={page} setPage={setPage}
                   />)}
+                  />
               <Footer />
               </>
           </div>
