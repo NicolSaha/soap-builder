@@ -30,6 +30,8 @@
 - [PHP Storm](https://www.jetbrains.com/phpstorm/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Markdown](https://www.markdownguide.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
 
 ## Brainstorm
 - [Session](https://github.com/NicolSaha/soap-builder/blob/main/Brainstorm/Brainstorm.md)
