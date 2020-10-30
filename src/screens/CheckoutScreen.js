@@ -46,10 +46,11 @@ const CheckoutScreen = ({ cart, decrementAmount, incrementAmount, removeFromCart
                                     <img src={ product.image } alt={ product.name }/>
                                 </div>
                                 <div className='product-name'>
-                                    <p>{ product.name }</p>
+                                    <p className="bold">{ product.name }</p>
+                                    <p className="light"> Ingredients: { product.magicEffects }, { product.scent }</p>
                                 </div>
                                 <div className='product-price'>
-                                    <p>€ { product.price }</p>
+                                    <p  className="bold">€ { product.price }</p>
                                 </div>
                                 <div className='product-qty'>
                                     <button className='buttonInCart' onClick={() => decrementAmount(index)}>-</button>
@@ -57,7 +58,7 @@ const CheckoutScreen = ({ cart, decrementAmount, incrementAmount, removeFromCart
                                     <button className='buttonInCart' onClick={() => incrementAmount(index)}>+</button>
                                 </div>
                                 <div className='total-product-price'>
-                                    <p>€ { totalPriceProduct(index) } </p>
+                                    <p  className="bold">€ { totalPriceProduct(index) } </p>
                                 </div>
                                 <div className='delete-product'>
                                     <button className='buttonInCart' onClick={ () => removeFromCart(product)}>X</button>

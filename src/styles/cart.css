@@ -52,9 +52,17 @@ body {
   grid-template-columns: 12% auto 20% 20% 12% 6%;
 }
 
-.product-name p, .product-price p, .total-product-price p {
+.bold {
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.product-name {
+  padding-right: 60px;
 }
 
 .product-image img {
@@ -62,7 +70,7 @@ body {
 }
 
 .product-qty {
-  padding-top: 16px;
+  padding-top: 0;
 }
 
 .product-qty button {
@@ -75,7 +83,7 @@ body {
 }
 
 .delete-product {
-  padding-top: 16px;
+  padding-top: 0;
 }
 
 .buttonInCart {
