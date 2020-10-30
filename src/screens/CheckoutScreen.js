@@ -20,7 +20,7 @@ const CheckoutScreen = ({ cart, decrementAmount, incrementAmount, removeFromCart
             </header>
             <main>
                 <div className='cart'>
-                    <img src='./assets/test.svg' alt='progress'/>
+                    <img src='./images/test.svg' alt='progress'/>
                     <h1>My Cart</h1>
                     <div className='underlineTitle'></div>
                     <div className='products'>

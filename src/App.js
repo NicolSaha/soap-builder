@@ -19,6 +19,7 @@ import './styles/cart.css';
 
 function App() {
 
+    const [inputName, setInputName] = useState('');
     const [inputType, setInputType] = useState('');
     const [inputBase, setInputBase] = useState("");
     const [purchased, setPurchased] = useState(false);
@@ -34,6 +35,7 @@ function App() {
     const [cart, setCart] = useState([]);
     const [page, setPage] = useState(PAGE_PRODUCTS);
 
+<<<<<<< HEAD
     const [products] = useState([
         {name: 'Custom Soap 1',
             price: '9.99',
@@ -56,6 +58,8 @@ function App() {
             setCart([...cart, product]);
         }
     }
+=======
+>>>>>>> fb61e1df1339721e4e7d27fea6db5d1e8842fab1
 
     //DEEP COPY
     function jsonCopy(src) {
@@ -116,6 +120,7 @@ function App() {
               />)}
               />
               <Route path='/confirmation' render={(props) => (<ConfirmationScreen {...props}
+                                                                                  inputName={inputName} setInputName={setInputName}
                                                                                   inputType={inputType} setInputType={setInputType}
                                                                                   inputBase={inputBase} setInputBase={setInputBase}
                                                                                   purchased={purchased} setPurchased={setPurchased}
@@ -129,7 +134,6 @@ function App() {
                                                                                       cart={cart} setCart={setCart}
                                                                                       page={page} setPage={setPage}
                                                                                       qtyInCart={qtyInCart}
-                                                                                      products={products}
                                                                                       removeFromCart={removeFromCart}
                                                                                       incrementAmount={incrementAmount}
                                                                                       decrementAmount={decrementAmount}
