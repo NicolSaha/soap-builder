@@ -1,15 +1,9 @@
 import React from 'react';
 import Header from '../components/layout/Header'
-import {Link, useHistory} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 const HomeScreen = () => {
-
-    let history = useHistory();
-
-    function handleBtnStepOne() {
-        history.push("/step1");
-    }
 
     return (
         <>

@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import StepThree from '../components/processSteps/StepThree'
 import Soap from '../components/soap/Soap'
 
 
-const SoapBuilderStepThreeScreen = ({ totalPrice, setTotalPrice, inputMagicEffects, setInputMagicEffects, inputSoapItem, setInputSoapItem }) => {
+const SoapBuilderStepThreeScreen = ({ totalPrice, setTotalPrice, inputMagicEffects, setInputMagicEffects }) => {
 
     function inputMagicEffectsHandler(e) {
         setInputMagicEffects([ ...inputMagicEffects, e.target.value]);
