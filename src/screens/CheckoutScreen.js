@@ -76,7 +76,7 @@ const CheckoutScreen = ({ cart, decrementAmount, incrementAmount, removeFromCart
                         <div className='buttons'>
                             <button className='buttonCheckout'>CHECKOUT</button> <br />
                              <button className='buttonCheckout'>
-                                <Link to={"/step1"}>  CONTINUE SHOPPING </Link>
+                                <Link to={"/"}>  CONTINUE SHOPPING </Link>
                                 </button>
                         </div>
 
