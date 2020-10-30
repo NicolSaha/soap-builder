@@ -34,7 +34,6 @@ function App() {
     const [cart, setCart] = useState([]);
     const [page, setPage] = useState(PAGE_PRODUCTS);
 
-
     const [products] = useState([
         {name: 'Custom Soap 1',
             price: '9.99',
@@ -49,7 +48,6 @@ function App() {
             id: 2,
         }
     ])
-
 
     function addToCart(product) {
         if(cart.includes(product)){
