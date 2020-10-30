@@ -77,9 +77,9 @@ const HomeScreen = () => {
                         </div>
 
                         <div className="mt-8 ml-32">
-                            <button onClick={handleBtnStepOne} className="inline-flex rounded-md shadow">
+                            <button onClick={handleBtnStepOne} className="inline-flex rounded-3xl shadow">
                                 <Link to={'/step1'}
-                                    className="font-body inline-flex items-center justify-center bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-white font-semibold px-4 py-2 rounded focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                                    className="font-body inline-flex items-center justify-center bg-mainLavender hover:bg-subLavender text-white hover:font-semibold px-8 py-3 rounded-3xl focus:outline-none focus:shadow-outline transition duration-100 ease-in-out">
                                         GET STARTED 	&rarr;
                                 </Link>
                             </button>
