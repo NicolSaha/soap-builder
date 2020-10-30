@@ -68,23 +68,23 @@ const ConfirmationScreen = ({ inputName, inputType, inputBase, inputMagicEffects
                                     className="text-subLavender"> {inputScent} </span>
                                     <br/>
                                     <i className="text-mainLavender">Price:</i> <span
-                                    className="text-subLavender"> €{totalPrice}0 </span>
+                                    className="text-subLavender"> €{totalPrice} </span>
                                 </p>
                             </div>
                         </div>
                         <div className="mt-5 sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense">
-                        <span className="flex w-full rounded-md shadow-sm sm:col-start-2">
+                        <span className="flex w-full rounded-3xl shadow-sm sm:col-start-2">
                             <button type="button"
                                     onClick={ addToCart }
-                                    className="font-body inline-flex justify-center w-full rounded-md border border-white px-4 py-2 bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-base leading-6 font-medium focus:outline-none text-white shadow-sm transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                                    className="font-body inline-flex justify-center w-full rounded-3xl border border-white bg-mainLavender hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl hover:text-white focus:outline-none transition ease-in-out duration-100 sm:text-sm sm:leading-5">
                                   <Link to={'/cart'}>
-                                <p> GO TO CHECKOUT ({qtyInCart}) &rarr;</p>
+                                <p> GO TO CHECKOUT ({qtyInCart})</p>
                                        </Link>
                             </button>
                         </span>
-                            <span className="mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:col-start-1">
+                            <span className="mt-3 flex w-full rounded-3xl shadow-sm sm:mt-0 sm:col-start-1">
                             <button  type="button"
-                                    className="font-body inline-flex justify-center w-full rounded-md border border-white px-4 py-2 bg-subGreen text-base leading-6 font-medium text-mainGreen shadow-sm hover:text-white focus:outline-none transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                                    className="font-body inline-flex justify-center w-full rounded-3xl border border-white bg-subGreen hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl hover:text-white focus:outline-none transition ease-in-out duration-100 sm:text-sm sm:leading-5">
                                   <Link to={'/step4'}>
                                       <p>GO BACK</p>
                                   </Link>

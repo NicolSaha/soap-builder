@@ -12,42 +12,33 @@ const SoapBuilderStepOneScreen = ({ inputType, setInputType, setTotalPrice }) =>
        setTotalPrice( + 5);
     }
 
+    function clearTypeHandler() {
+        setInputType();
+    }
 
+    const selectBody = document.getElementById("selectBody");
+    const selectHair = document.getElementById("selectHair");
+    const selectFace = document.getElementById("selectFace");
+    const selectShave = document.getElementById("selectShave");
     if(inputType === 'body'){
-        const selectBody = document.getElementById("selectBody");
         selectBody.classList.remove("opacity-0");
-        const selectHair = document.getElementById("selectHair");
         selectHair.classList.add("opacity-0");
-        const selectFace = document.getElementById("selectFace");
         selectFace.classList.add("opacity-0");
-        const selectShave = document.getElementById("selectShave");
         selectShave.classList.add("opacity-0");
     } else if(inputType === 'hair') {
-        const selectHair = document.getElementById("selectHair");
         selectHair.classList.remove("opacity-0");
-        const selectFace = document.getElementById("selectFace");
         selectFace.classList.add("opacity-0");
-        const selectShave = document.getElementById("selectShave");
         selectShave.classList.add("opacity-0");
-        const selectBody = document.getElementById("selectBody");
         selectBody.classList.add("opacity-0");
     } else if(inputType === 'face') {
-        const selectFace = document.getElementById("selectFace");
         selectFace.classList.remove("opacity-0");
-        const selectHair = document.getElementById("selectHair");
         selectHair.classList.add("opacity-0");
-        const selectShave = document.getElementById("selectShave");
         selectShave.classList.add("opacity-0");
-        const selectBody = document.getElementById("selectBody");
         selectBody.classList.add("opacity-0");
     } else if(inputType === 'shave') {
-        const selectShave = document.getElementById("selectShave");
         selectShave.classList.remove("opacity-0");
-        const selectFace = document.getElementById("selectFace");
         selectFace.classList.add("opacity-0");
-        const selectHair = document.getElementById("selectHair");
         selectHair.classList.add("opacity-0");
-        const selectBody = document.getElementById("selectBody");
         selectBody.classList.add("opacity-0");
     }
 
@@ -174,18 +165,19 @@ const SoapBuilderStepOneScreen = ({ inputType, setInputType, setTotalPrice }) =>
 
                         <div className="lg:col-span-1">
                             <div>
+                                <p className="text-center font-body capitalize" >{inputType}</p>
                                 <Soap />
                             </div>
 
                                 <div className="flex mt-8">
-                                        <button className="inline-flex">
+                                        <button onClick={clearTypeHandler} className="inline-flex">
                                             <p className="text-sm font-body inline-flex items-center justify-center bg-transparent border border-transparent text-mainLavender hover:underline">
                                         CLEAR SELECTIONS
                                     </p>
                                 </button>
-                                <button className="inline-flex rounded-md shadow ml-4">
+                                <button className="inline-flex rounded-3xl shadow ml-4">
                                     <Link to={'/step2'}>
-                                    <p className="text-sm font-body inline-flex items-center justify-center bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-white font-semibold px-4 py-2 rounded transition duration-150 ease-in-out">
+                                    <p className="text-sm font-body inline-flex items-center justify-center bg-mainLavender hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl transition duration-100 ease-in-out">
                                         CHOOSE BASE 	&rarr;
                                     </p>
                                     </Link>

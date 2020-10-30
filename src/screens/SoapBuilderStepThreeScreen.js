@@ -59,6 +59,10 @@ const SoapBuilderStepThreeScreen = ({ totalPrice, setTotalPrice, inputMagicEffec
         selectSpirulina.classList.add("hidden");
     }
 
+    function clearEffectHandler() {
+        setInputMagicEffects([]);
+    }
+
     return (
         <>
 
@@ -206,14 +210,14 @@ const SoapBuilderStepThreeScreen = ({ totalPrice, setTotalPrice, inputMagicEffec
                         </div>
 
                         <div className="flex mt-8 lg:col-span-4 justify-end items-end mr-0 mt-4">
-                            <button className="inline-flex">
+                            <button onClick={clearEffectHandler} className="inline-flex">
                                 <p className="text-sm font-body inline-flex items-center justify-center bg-transparent border border-transparent text-mainLavender hover:underline">
                                     CLEAR SELECTIONS
                                 </p>
                             </button>
-                            <button className="inline-flex rounded-md shadow ml-4">
+                            <button className="inline-flex rounded-3xl shadow ml-4">
                                 <Link to={'/step4'}>
-                                    <p className="text-sm font-body inline-flex items-center justify-center bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-white font-semibold px-4 py-2 rounded transition duration-150 ease-in-out">
+                                    <p className="text-sm font-body inline-flex items-center justify-center bg-mainLavender hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl transition duration-100 ease-in-out">
                                         CHOOSE SCENT 	&rarr;
                                     </p>
                                 </Link>

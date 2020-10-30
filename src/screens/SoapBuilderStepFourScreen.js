@@ -6,7 +6,13 @@ import Soap from '../components/soap/Soap'
 const SoapBuilderStepFourScreen = ({ inputScent, setInputScent }) => {
 
     function inputScentHandler(e) {
-        setInputScent(e.target.value)
+       if(inputScent !== null) {
+           setInputScent(e.target.value)
+       }
+    }
+
+    function clearScentHandler() {
+        setInputScent([]);
     }
 
 
@@ -195,30 +201,34 @@ const SoapBuilderStepFourScreen = ({ inputScent, setInputScent }) => {
                                 <img id="camomille" src="./images/camomille_smell.svg" height="125px" width="125px" style={{marginTop: 20, marginLeft: 150}}  className="hidden"/>
                                 <img id="honey" src="./images/honey_smell.svg" height="150px" width="150px" style={{marginTop: 20, marginLeft: 150}}  className="hidden"/>
                             </div>
-                    </div>
 
-                        <div className="flex ml-8 lg:col-span-4 justify-end items-end mr-0 mt-4">
-                            <button className="inline-flex rounded-md shadow ml-4">
-                                <p className="text-lg font-body inline-flex items-center justify-center bg-subGreen bg-gradient-to-r hover:from-mainGreen hover:to-subGreen text-white px-4 py-2 rounded transition duration-150 ease-in-out">
-                                    ADD TO LIKED
-                                </p>
-                            </button>
-                            <button id="addToCart_btn" className="inline-flex rounded-md shadow ml-4">
-                                <Link to={'/confirmation'}>
-                                    <p
-                                        className="text-lg font-body inline-flex items-center justify-center bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-white font-semibold px-4 py-2 rounded transition duration-150 ease-in-out">
-                                        ADD TO CART
+
+                            <div className="ml-8 justify-end items-end mr-0 mt-4">
+                                <button className="inline-flex rounded-3xl shadow ml-4">
+                                    <p className="text-lg font-body inline-flex items-center justify-center bg-subGreen hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl transition duration-100 ease-in-out">
+                                        ADD TO LIKED
                                     </p>
-                                </Link>
-                            </button>
-                        </div>
-                        <button  className="ml-16 lg:col-span-4 justify-end items-end mr-0 float-right">
-                            <p className="text-sm font-body inline-flex items-center justify-center bg-transparent border border-transparent text-mainLavender hover:underline">
-                                CLEAR SELECTIONS
-                            </p>
-                        </button>
+                                </button>
 
+                                <button id="addToCart_btn" className="inline-flex rounded-3xl shadow ml-4 mt-2">
+                                    <Link to={'/confirmation'}>
+                                        <p
+                                            className="text-lg font-body inline-flex items-center justify-center bg-mainLavender hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl transition duration-100 ease-in-out">
+                                            ADD TO CART
+                                        </p>
+                                    </Link>
+                                </button>
+                                <button onClick={clearScentHandler}  className="ml-10">
+                                    <p className="text-sm font-body inline-flex items-center justify-center bg-transparent border border-transparent text-mainLavender hover:underline">
+                                        CLEAR SELECTIONS
+                                    </p>
+                                </button>
+                            </div>
+
+
+                        </div>
                     </div>
+
 
                 </div>
             </div>

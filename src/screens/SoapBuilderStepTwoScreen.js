@@ -9,20 +9,22 @@ const SoapBuilderStepTwoScreen = ({ inputBase, setInputBase }) => {
     function inputBaseHandler(e) {
         setInputBase(e.target.value);
     }
+    function clearBaseHandler() {
+        setInputBase();
+    }
 
     const selectNeutral = document.getElementById("selectNeutral");
     const selectDry = document.getElementById("selectDry");
     const selectOily = document.getElementById("selectOily");
-
-    if(inputBase === 'neutral'){
+    if(inputBase === 'neutral skin'){
         selectNeutral.classList.remove("opacity-0");
         selectDry.classList.add("opacity-0");
         selectOily.classList.add("opacity-0");
-    } else if(inputBase === 'dry') {
+    } else if(inputBase === 'dry skin') {
         selectDry.classList.remove("opacity-0");
         selectNeutral.classList.add("opacity-0");
         selectOily.classList.add("opacity-0");
-    } else if(inputBase === 'oily') {
+    } else if(inputBase === 'oily skin') {
         selectOily.classList.remove("opacity-0");
         selectDry.classList.add("opacity-0");
         selectNeutral.classList.add("opacity-0");
@@ -64,7 +66,7 @@ const SoapBuilderStepTwoScreen = ({ inputBase, setInputBase }) => {
                                     <img className="-mb-14" src="./images/neutral_skin.svg" alt="" />
                                 </div>
                                 <button
-                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-subLavender text-mainGreen" value="neutral" onClick={inputBaseHandler}>Add
+                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-subLavender text-mainGreen" value="neutral skin" onClick={inputBaseHandler}>Add
                                 </button>
                                 <div className="mt-5">
                                     <h4 className="font-body text-mainGreen text-lg leading-6 font-medium text-gray-900">NEUTRAL</h4>
@@ -87,7 +89,7 @@ const SoapBuilderStepTwoScreen = ({ inputBase, setInputBase }) => {
                                     <img src="./images/dry_skin.svg" alt="" />
                                 </div>
                                 <button
-                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-subLavender text-mainGreen" value="dry" onClick={inputBaseHandler}>Add
+                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-subLavender text-mainGreen" value="dry skin" onClick={inputBaseHandler}>Add
                                 </button>
                                 <div className="mt-5">
                                     <h4 className="text-lg leading-6 font-medium text-subGreen">DRY</h4>
@@ -111,7 +113,7 @@ const SoapBuilderStepTwoScreen = ({ inputBase, setInputBase }) => {
                                     <img src="./images/oily_skin.svg" alt="" />
                                 </div>
                                 <button
-                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-subLavender text-mainGreen" value="oily" onClick={inputBaseHandler}>Add
+                                    className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-subLavender text-mainGreen" value="oily skin" onClick={inputBaseHandler}>Add
                                 </button>
                                 <div className="mt-5">
                                     <h4 className="text-lg leading-6 font-medium text-subGreen">OILY</h4>
@@ -129,17 +131,18 @@ const SoapBuilderStepTwoScreen = ({ inputBase, setInputBase }) => {
 
                         <div className="lg:col-span-1">
                             <div>
+                                <p className="text-center font-body capitalize" >{inputBase}</p>
                                 <Soap />
                             </div>
                             <div className="flex mt-8">
-                                <button className="inline-flex ">
+                                <button onClick={clearBaseHandler} className="inline-flex ">
                                     <p className="text-sm font-body inline-flex items-center justify-center bg-transparent border border-transparent text-mainLavender hover:underline">
                                         CLEAR SELECTIONS
                                     </p>
                                 </button>
-                                <button className="inline-flex rounded-md shadow ml-4">
+                                <button className="inline-flex rounded-3xl shadow ml-4">
                                     <Link to={'/step3'}>
-                                    <p className="text-sm font-body inline-flex items-center justify-center bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-white font-semibold px-4 py-2 rounded transition duration-150 ease-in-out">
+                                    <p className="text-sm font-body inline-flex items-center justify-center bg-mainLavender hover:bg-subLavender text-white hover:font-semibold px-8 py-3 text-white rounded-3xl transition duration-100 ease-in-out">
                                         CHOOSE MAGIC 	&rarr;
                                     </p>
                                     </Link>
