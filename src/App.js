@@ -34,6 +34,31 @@ function App() {
     const [cart, setCart] = useState([]);
     const [page, setPage] = useState(PAGE_PRODUCTS);
 
+<<<<<<< HEAD
+    const [products] = useState([
+        {name: 'Custom Soap 1',
+            price: '9.99',
+            image: './assets/soap1.jpg',
+            amount: 1,
+            id: 1,
+        },
+        {name: 'Custom Soap 2',
+            price: '8.99',
+            image: './assets/soap2.jpg',
+            amount: 1,
+            id: 2,
+        }
+    ])
+
+    function addToCart(product) {
+        if(cart.includes(product)){
+            console.log('product already exists');
+        } else {
+            setCart([...cart, product]);
+        }
+    }
+=======
+>>>>>>> fb61e1df1339721e4e7d27fea6db5d1e8842fab1
 
     //DEEP COPY
     function jsonCopy(src) {
