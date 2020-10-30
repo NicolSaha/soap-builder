@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-
-const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScent, totalPrice }) => {
+const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScent, totalPrice, qtyInCart }) => {
 
 
 
@@ -71,16 +70,19 @@ const ConfirmationScreen = ({ inputType, inputBase, inputMagicEffects, inputScen
                         <span className="flex w-full rounded-md shadow-sm sm:col-start-2">
                             <button type="button"
                                     className="font-body inline-flex justify-center w-full rounded-md border border-white px-4 py-2 bg-gradient-to-r from-mainLavender to-subLavender hover:from-mainGreen hover:to-subGreen text-base leading-6 font-medium focus:outline-none text-white shadow-sm transition ease-in-out duration-150 sm:text-sm sm:leading-5">
-                                 ADD TO CART &rarr;
+                                  <Link to={'/cart'}>
+                                <p> GO TO CHECKOUT ({qtyInCart}) &rarr;</p>
+                                       </Link>
                             </button>
                         </span>
                             <span className="mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:col-start-1">
-                            <button type="button"
+                            <button  type="button"
                                     className="font-body inline-flex justify-center w-full rounded-md border border-white px-4 py-2 bg-subGreen text-base leading-6 font-medium text-mainGreen shadow-sm hover:text-white focus:outline-none transition ease-in-out duration-150 sm:text-sm sm:leading-5">
                                   <Link to={'/step4'}>
                                       <p>GO BACK</p>
                                   </Link>
                             </button>
+
                         </span>
                         </div>
                     </div>

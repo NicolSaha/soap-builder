@@ -16,6 +16,7 @@ import './styles/cart.css';
 
 
 
+
 function App() {
 
     const [inputType, setInputType] = useState('');
@@ -27,8 +28,12 @@ function App() {
     const [chosenItems, setChosenItems] = useState(false);
     const [inputSoapItem, setInputSoapItem] = useState('');
 
+    const PAGE_PRODUCTS = 'products';
+    const PAGE_CART = 'cart';
+
     const [cart, setCart] = useState([]);
-    const [page, setPage] = useState('products');
+    const [page, setPage] = useState(PAGE_PRODUCTS);
+
 
     const [products] = useState([
         {name: 'Custom Soap 1',
@@ -45,6 +50,46 @@ function App() {
         }
     ])
 
+
+    function addToCart(product) {
+        if(cart.includes(product)){
+            console.log('product already exists');
+        } else {
+            setCart([...cart, product]);
+        }
+    }
+
+    //DEEP COPY
+    function jsonCopy(src) {
+        return JSON.parse(JSON.stringify(src));
+    }
+
+    function removeFromCart(productToRemove) {
+        setCart(
+            cart.filter((product) => product !== productToRemove)
+        )
+    }
+
+    function incrementAmount(index) {
+        const newItems = jsonCopy([...cart]);
+
+        newItems[index].amount++;
+
+        setCart(newItems);
+    }
+
+    function decrementAmount(index) {
+        const newItems = jsonCopy([...cart]);
+
+        newItems[index].amount--;
+
+        setCart(newItems);
+    }
+
+
+    let qtyInCart = cart.reduce(function(prev, current) {
+        return prev + +current.amount
+    }, 0);
 
     return (
       <Router>
@@ -79,13 +124,21 @@ function App() {
                                                                                   inputMagicEffects={inputMagicEffects} setInputMagicEffects={setInputMagicEffects}
                                                                                   inputScent={inputScent} setInputScent={setInputScent}
                                                                                   totalPrice={totalPrice} setTotalPrice={setTotalPrice}
+                                                                                  qtyInCart={qtyInCart}
               />)}
               />
-                  <Route path='/checkout' render={(props) => (<CheckoutScreen {...props}
+              <Route path='/cart' render={(props) => (<CheckoutScreen {...props}
                                                                                       cart={cart} setCart={setCart}
                                                                                       page={page} setPage={setPage}
-                  />)}
-                  />
+                                                                                      qtyInCart={qtyInCart}
+                                                                                      products={products}
+                                                                                      removeFromCart={removeFromCart}
+                                                                                      incrementAmount={incrementAmount}
+                                                                                      decrementAmount={decrementAmount}
+
+
+              />)}
+              />
               <Footer />
               </>
           </div>
