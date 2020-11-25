@@ -12,11 +12,6 @@ import CheckoutScreen from "./screens/CheckoutScreen";
 
 import './styles/cart.css';
 
-
-
-
-
-
 function App() {
 
     const [inputName, setInputName] = useState('');
